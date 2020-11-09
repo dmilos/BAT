@@ -1,0 +1,1 @@
+msiexec /i TortoiseSVN-1.8.6.25419-x64-svn-1.8.8.msi /quiet /qn /norestart

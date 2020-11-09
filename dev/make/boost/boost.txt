@@ -1,0 +1,35 @@
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths
+
+    C:/work/code/cpp/include/boost
+
+The following directory should be added to linker library paths:
+
+    C:\work\code\cpp\include\boost\stage\lib
+
+
+
+1.Build the win32 binaries
+bjam --toolset=msvc-9.0 --build-type=complete stage
+
+2.Create the directory lib\win32
+
+3.Move the contents of stage\lib to lib\win32
+4.Remove the directories bin.v2 and stage
+
+5.Build the x64 binaries
+bjam --toolset=msvc-9.0 address-model=64 --build-type=complete stage
+
+6.Create the directory lib\x64
+
+7.Move the contents of stage\lib to lib\x64
+8.Remove the directories bin.v2 and stage
+
+
+bjam  address-model=64 --toolset=msvc-9.0  --build-type=complete --stagedir=lib\x64 stage
+bjam address-model=64    toolset=msvc                            --stagedir=./lib_64bit   threading=multi
+bjam                     toolset=msvc                            --stagedir=./lib         threading=multi
+
+Unfortunately to build 64, address-model=64 doesn't work. You need to have your path pointing to Visual Studio \bin\amd64\cl.exe. Otherwise it builds 32 bit version. To do this you can start Microsoft SDK Command prompt and use "setenv /Release /x64" which redefines all the paths
+

@@ -1,4 +1,5 @@
 # BAT
+
 Misc BAT files
 
-- Due to rapid development of erithing do not expec to be up to date. 
+- Due to rapid development of everything do not expect to be up to date.
