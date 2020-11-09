@@ -1,4 +1,4 @@
-# BAT-DEV-ENV
-Misc BAT files to set up development environment for miscelenious libraries
+# BAT
+Misc BAT files
 
 - Due to rapid development of erithing do not expec to be up to date. 
