@@ -1,6 +1,6 @@
 @rem Primary
 
-setx OPENCV__root         c:\work\code\cpp\include\opencv
+setx OPENCV__root         z:\work\code\cpp\include\opencv
 
 @rem call 440.bat
 @rem call 450.bat
